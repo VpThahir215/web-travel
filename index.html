@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thahir</title>
+	<link rel="icon" href="data:image/png;base64,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">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <h4> <strong>THAHIR</strong> </h4>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#OurWorld-section" class="nav-link"><span>Travels</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	   
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hey! I am</span>
+		  				<h1>VP <br> THAHIR</h1>
+			  				<h2>I've a 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Himalayan bike" ]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb " id="about-section" hei>
+    	<div class="container" style="max-width:822px;">
+    		<div class="row d-flex no-gutters ">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/Himalayan.jpg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+		            <h2 class="mb-4">About Me</h2>
+		            <p> a small village knwon as the  twins' own country</p>
+		            <ul class="about-info mt-4 px-md-0 px-2">
+		            	<li class="d-flex"><span>Name:</span> <span>Thahir</span></li>
+		            	<li class="d-flex"><span>Date of birth:</span> <span>June 30, 2003</span></li>
+		            	<li class="d-flex"><span>Address:</span> <span>Kodinhi Malappuram India</span></li>
+		            
+		            	<li class="d-flex"><span>Email:</span> <span>vpthahir3062003@gmail.com</span></li>
+		            	<li class="d-flex"><span>Phone: </span> <span>+91-9946659082</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	        
+	        </div>
+        </div>
+    	</div>
+    </section>
+ <section class="ftco-section ftco-no-pb goto-here" id="OurWorld-section">
+        <div class="container">
+    	    <div class="row">
+    		       <div class="col-md-3">
+				        <nav id="navi">
+					    <ul>
+							
+					      <li><a href="#page-1" class="current">Kashmir</a></li>
+					      <li><a href="#page-2">Maladive</a></li>
+					      <li><a href="#page-3">New Zealand</a></li>
+					      <li><a href="#page-4">Indonesia</a></li>
+					     </ul>
+					    </nav>
+				    </div>
+			<div class="col-md-9">
+					      <div id="page-1" class= "page one">
+					    	  <h2 class="heading">Travels</h2>
+					   
+					    	
+	    	
+	    				
+					    	 <div class=" text pl-3  fl">
+		    					<span class="date">2012-2013</span>
+					
+								
+									<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/kahmir3.jpg);height: 850px; text-align: center;">
+										
+										<div class="overlay"></div>
+										<div class="text text-center p-4">
+											<h3><a href="#">Gulmarg</a></h3>
+											<span>Kashmir in India</span>
+										</div>
+									</div>
+								</div>
+								
+					         <div class="text pl-3 " style="padding-top: 19px;">
+						    
+									<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/kahmir2.jpg);height: 850px; text-align: center;">
+										<div class="overlay"></div>
+										<div class="text text-center p-4">
+											<h3><a href="#">Sonamarg</a></h3>
+											<span>Kashmir in India</span>
+										</div>
+									</div>
+								</div>
+								<div class="text pl-3 " style="padding-top: 19px;">
+									
+									<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/kahmir1.jpg);height: 850px; text-align: center;">
+										<div class="overlay"></div>
+										<div class="text text-center p-4">
+											<h3><a href="#">Srinagar</a></h3>
+											<span>Kashmir in India</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+								   
+
+
+
+		    				
+	    				
+	    				
+	    			
+					 
+
+					    <div id="page-2" class= "page two">
+					  	   <h2 class="heading">Maladive</h2>>
+					   
+					    	
+					    	<div class="text pl-3" style="padding-top: 19px;">
+		    					<span class="date">2017-2018</span>
+		    					<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Maldives1.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#"> </a></h3>
+										<span>In Maladive </span>
+									</div>
+								</div>
+		    				</div>
+							<div class="text pl-3" style="padding-top: 19px;">
+		    					
+		    					<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Maldives2.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#">Addu Atoll</a></h3>
+										<span>In Maladive </span>
+									</div>
+								</div>
+		    				</div>
+							<div class="text pl-3" style="padding-top: 19px;">
+		    					
+		    					<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Maldives3.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#">Vaavu Atoll </a></h3>
+										<span>In Maladive </span>
+									</div>
+								</div>
+		    				</div>
+	    				</div>
+							
+						
+							
+	    				
+						
+						
+					 <div id="page-3" class= "page three">
+						 <h2 class="heading">New Zealand</h2>
+						 <p> The places offers a different experience, whether you’re looking for adventure or a leisurely ride through beautiful scenery!</p>
+		  
+
+						 <div class="text pl-3" style="padding-top: 19px;">
+							<span class="date">2018-2019</span>
+							<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/New\ Zealand1.jpg);height: 850px; text-align: center;">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><a href="#"> Wanaka:</a></h3>
+									<span>In New Zealand </span>
+								</div>
+							</div>
+						</div>
+
+						<div class="text pl-3" style="padding-top: 19px;">
+							
+							<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/New\ Zealand2.jpg);    height: 1190px; text-align: center;">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><a href="#"> Queenstown</a></h3>
+									<span>In New Zealand </span>
+								</div>
+							</div>
+						</div>
+						<div class="text pl-3" style="padding-top: 19px;">
+							
+							<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/New\ Zealand3.jpg);height: 850px; text-align: center;">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><a href="#">Rotorua</a></h3>
+									<span>In New Zealand </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					  	
+					  	
+				       <div id="page-4" class= "page four">
+					         <h2 class="heading">Indonesia</h2>
+							 <div class="text pl-3" style="padding-top: 19px;">
+								<span class="date">2020-2021</span>
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Indonesia1.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#"> Bali:</a></h3>
+										<span>In Indonesia </span>
+									</div>
+								</div>
+							</div>
+							<div class="text pl-3" style="padding-top: 19px;">
+
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Indonesia2.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#"> Lombok:</a></h3>
+										<span>In Indonesia  </span>
+									</div>
+								</div>
+							</div>
+							<div class="text pl-3" style="padding-top: 19px;">
+								
+								<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Indonesia3.jpg);height: 850px; text-align: center;">
+									<div class="overlay"></div>
+									<div class="text text-center p-4">
+										<h3><a href="#"> Raja Ampat::</a></h3>
+										<span>In Indonesia  </span>
+									</div>
+								</div>
+							</div>
+					    
+			 </div>
+		   </div>
+	    </div>
+	</div>  
+	   
+ </section>
+
+   
+
+   
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3" >
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5" >
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" style="left: 100px;">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Address</h3>
+		            <p>Kodinhi village, Malappuram ,Krala,India</p>
+		          </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" style="left: 186px;">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Contact Number</h3>
+		            <p><a href="tel://9946659082">+91 9946 6590 82</a></p>
+	            </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" style="left: 284px;">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Email Address</h3>
+		            <p><a href="mailto:vpthahir3062003@gmail.com" style="font-size: smaller;">vpthahir3062003@gmail.com</a></p>
+		          </div>
+	          </div>
+          </div>
+         
+        </div>
+
+    
+      </div>
+    </section>
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>We travel, initially, to lose ourselves; and we travel, next, to find ourselves. We travel to open our hearts and eyes and learn more about the world than our newspapers will accommodate.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/share/BNq1zzj47tprcdUV/?mibextid=qi2Omg"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href=" https://www.instagram.com/invites/contact/?igsh=17g3etldfgtyt&utm_content=1zrkrxs"><span class="icon-instagram"></span></a></li>
+				<li class="ftco-animate"><a href="https://Wa.me/+919946659082"><span class="fa-brands fa-whatsapp"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Travels</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+        
+              </ul>
+            </div>
+          </div>
+         
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Malappuram,Kerala,India</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+9946659082</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">vpthahir3062003@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
